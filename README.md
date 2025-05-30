@@ -39,14 +39,20 @@ This demo is created for the 42Berlin and Devoxx France workshops.
 
 ### Using Docker
 
-1. Build the Docker image:
+1. Run ollama :
+   ```bash
+   ollama pull qwen3:1.7b
+   ```
+
+2. Build the Docker image:
    ```bash
    docker build -t cookbook .
    ```
-2. Run the Docker container:
+3. Run the Docker container:
    ```bash
    docker run --net host cookbook
    ```
+
 
 Note: we're using `--net host` to make it easier for the Java
 app to communicate with Ollama when Ollama is running locally.

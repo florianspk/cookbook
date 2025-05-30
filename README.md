@@ -41,7 +41,7 @@ This demo is created for the 42Berlin and Devoxx France workshops.
 
 1. Run ollama :
    ```bash
-   ollama pull qwen3:1.7b
+   ollama pull qwen2:1.5b
    ```
 
 2. Build the Docker image:
